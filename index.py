@@ -23,15 +23,15 @@ def ler_binario_e_reconstruir(binario="dados.bin"):
     return conteudo
 
 def exibir_arquivos():
-    print("\n--- CONTEÚDO ORIGINAL (.txt) ---")
+    print("\n CONTEÚDO ORIGINAL (.txt)")
     with open("dados.txt", "r", encoding="utf-8") as f:
         print(f.read())
 
-    print("\n--- CONTEÚDO RECONSTRUÍDO DO .bin ---")
+    print("\n CONTEÚDO RECONSTRUÍDO DO .bin")
     print(ler_binario_e_reconstruir())
 
 def main():
-    print("=== SISTEMA DE COLETA DE DADOS ===")
+    print("SISTEMA DE COLETA DE DADOS")
     while True:
         dados = coletar_dados()
         salvar_txt(dados)
